@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login&signUp.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <h1>Personal Blogging App</h1>
+            <div>
+                <button class="Btn1" id="homeBtn">Home</button>
+            </div>
+        </nav>
+    </div>
+    <div class="main1">
+        <!-- Login form  -->
+        <section class="loginForm" id="loginForm">
+            <div class="content">
+                <div class="heading1">
+                    <h1>Login</h1>
+                </div>
+                <hr>
+                <div class="email-box">
+                    <h1>Email</h1>
+                    <input type="email" id="loginEmail" placeholder="Enter Your Email" required>
+                </div>
+                <div class="pass-box">
+                    <div class="pass-box-pass">
+                        <h1>Password</h1><span>
+                            <p>Show</p><input type="checkbox" name="checkBox">
+                        </span>
+                    </div>
+                    <input type="password" id="loginPass" placeholder="Enter Your Password" required>
+                </div>
+                <div class="btn">
+                    <button class="Btn1" type="submit" id="loginBtn">Login</button>
+                </div>
+                <div class="msg">
+                    <p>If You Don`t Have an Account Please <span id="showRegFormBtn">Register</span> First;</p>
+                </div>
+            </div>
+        </section>
+        <!-- SignUp form -->
+        <section id="signUpForm" class=" signUpForm">
+            <div class="content">
+                <div class="heading">
+                    <h1>Register Now</h1>
+                </div>
+                <hr>
+                <div class="name-box">
+                    <h1>Name</h1>
+                    <input type="text" id="signUpName" placeholder="Enter Your Full Name" required>
+                </div>
+                <div class="number-box">
+                    <h1>Number</h1>
+                    <input type="number" id="signUpNum" placeholder="Enter Your Phone Number" required>
+                </div>
+                <div class="email-box">
+                    <h1>Email</h1>
+                    <input type="email" id="signUpEmail" placeholder="Enter Your Email" required>
+                </div>
+                <div class="pass-box">
+                    <div class="pass-box-pass">
+                        <h1>Password</h1><span>
+                            <p>Show</p><input type="checkbox" name="checkBox">
+                        </span>
+                    </div>
+                    <input type="password" id="signUpPass" placeholder="Enter Your Password" required>
+                </div>
+                <div class="btn">
+                    <button class="Btn1" type="submit" id="registerBtn">Register</button>
+                </div>
+                <div class="msg">
+                    <p>If You Already Have an Account <span id="showLogFormBtn">Login</span> ;</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="loader" id="loader">
+        <div class="custom-loader"></div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
