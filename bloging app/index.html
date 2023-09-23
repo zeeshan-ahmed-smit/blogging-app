@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./assets/css/login&signup.css">
+    <link rel="shortcut icon" href="./assets/image/icon.png" type="image/x-icon">
+</head>
+
+<bod>
+    <div class="main" id="main1">
+        <div class="container">
+            <div class="header" id="header">
+                <nav>
+                    <h1>Personal Blogging App</h1>
+                </nav>
+                <div class="heading">
+                    <h1 id="h1">Login!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="main1">
+            <!-- login form -->
+            <div class="login-box" id="login-box">
+                <p>Login</p>
+                <form>
+                    <div class="user-box">
+                        <input required="" id="login-email" type="text">
+                        <label>Email</label>
+                    </div>
+                    <div class="user-box">
+                        <input required="" id="login-pass" type="password">
+                        <div class="image" id="image">
+                            <img id="eye-off1" src="./assets/image/eye-off.svg" alt="">
+                        </div>
+                        <label>Password</label>
+                    </div>
+                    <button type="button" class="loginBtn" id="login-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        LOGIN
+                    </button>
+                </form>
+                <p>Don't have an account? <button class="b2" id="signUp-btn2">Sign up!</button></p>
+            </div>
+            <!-- SinUp form -->
+            <div class="signUp-box" id="signUp-box">
+                <p>Sign Up</p>
+                <form>
+                    <div class="user-box">
+                        <input required="" id="signup-name" type="text">
+                        <label>Full Name</label>
+                    </div>
+                    <div class="user-box">
+                        <input required="" id="signup-number" type="text">
+                        <label>Phone Number</label>
+                    </div>
+                    <div class="user-box">
+                        <input required="" id="signup-email" type="text">
+                        <label>Email</label>
+                    </div>
+                    <div class="user-box">
+                        <input required="" id="signup-pass" type="password">
+                        <div class="image" id="image">
+                            <img id="eye-off2" src="./assets/image/eye-off.svg" alt="">
+                        </div>
+                        <label>Password</label>
+                    </div>
+                    <button type="button" class="signUpBtn" id="signup-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Sign Up
+                    </button>
+                </form>
+                <p>Already have an account? <button class="b2" id="login-btn2">Login!</button></p>
+            </div>
+        </div>
+    </div>
+<div class="loaders" id="loaders1">
+    <div class="loader-1">
+        <div class="loader-2"></div>
+        <div class="loader-3"></div>
+        <div class="loader-4"></div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./assets/js/app.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="./assets/css/profile.css">
+    <link rel="shortcut icon" href="./assets/image/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main" id="main">
+        <div class="container">
+            <div class="header" id="header">
+                <nav>
+                    <h1>Personal Blogging App</h1>
+                    <div class="nav-btn">
+                        <button class="Btn" id="backBtn2">Back</button>
+                    </div>
+                </nav>
+                <div class="heading">
+                    <h1>Profile!</h1>
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile-box">
+                <p>profile</p>
+                <div class="profile-img">
+                    <div class="img">
+                        <img src="./assets/image/profile-pic.jpg" id="profilePic">
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="user-box">
+                        <input value="" id="user-name" readonly type="text">
+                        <label>Name</label>
+                    </div>
+                    <div class="user-box">
+                        <input value="" id="user-phoneNumber" readonly type="text">
+                        <label>Phone Number</label>
+                    </div>
+                    <div class="user-box">
+                        <input value="" id="user-email" readonly type="text">
+                        <label>Email</label>
+                    </div>
+                </div>
+                <button type="button" class="Btn1 updateProfileBtn" id="updateProfileBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Update Profile
+                </button><br>
+                <button type="button" class="Btn1 logOutBtn" id="logOutBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Log out
+                </button>
+            </div>
+            <input type="text" style="visibility: hidden;" id="uid">
+        </div>
+    </div>
+    <div class="updateProfile" id="updateProfile" style="display: none;">
+        <div class="profile">
+            <div class="profile-box">
+                <p>Update profile</p>
+                <div class="profile-img">
+                    <div class="img2">
+                        <img src="./assets/image/profile-pic.jpg" id="userProfileImg">
+                    </div>
+                    <div class="camera">
+                        <label>
+                            <input type="file" style="display: none;" id="file"
+                                accept="image/png, image/gif, image/jpeg">
+                            <img src="./assets/image/camera.svg" id="camera-icon">
+                        </label>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="user-box">
+                        <input value="" id="update-user-name" type="text">
+                        <label>Enter Your Name</label>
+                    </div>
+                    <div class="user-box">
+                        <input value="" id="update-user-phoneNumber" type="text">
+                        <label>Enter Your Phone Number</label>
+                    </div>
+                </div>
+                <button type="button" class="Btn1" id="updateProfileBtn1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Update
+                </button><br>
+                <button type="button" class="Btn1" id="exitBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Exit
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="loaders" id="loaders">
+        <div class="loader-1">
+            <div class="loader-2"></div>
+            <div class="loader-3"></div>
+            <div class="loader-4"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="./assets/js/app.js"></script>
+</body>
+
+</html>
